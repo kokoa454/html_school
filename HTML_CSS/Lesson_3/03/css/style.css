@@ -1,0 +1,27 @@
+@charset "UTF-8";
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+section{
+    background-color: #3eb6bd;
+    width: 800px;
+    margin: 50px auto 0;
+    padding: 20px;
+    box-sizing: border-box; /*section内のmargin+paddingを840（800+20+20）から800（800の内側20ずつ）へ変更*/
+}
+
+h1{
+    color: #fff;
+}
+
+em{
+    font-weight: bold;
+}
+
+img{
+    width: 760px;
+    vertical-align: bottom; /*要素と子孫要素の◯端を揃える*/
+}
