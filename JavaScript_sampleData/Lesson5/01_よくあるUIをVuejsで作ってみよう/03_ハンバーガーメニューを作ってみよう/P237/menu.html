@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Title</title>
+</head>
+<body>
+<div id="app">
+  <header id="header">
+    <button
+      class="breadcrumb-btn"
+      @click.prevent.stop="openMenu"
+    >
+      <span class="breadcrumb-decoration"></span>
+      <span class="breadcrumb-decoration"></span>
+      <span class="breadcrumb-decoration"></span>
+    </button>
+    <transition name="slide">
+      <div
+        v-if="isOpenMenu"
+        class="breadcrumb-menu"
+      >
+        <header>
+          <button
+            class="breadcrumb-btn"
+            @click.prevent.stop="closeMenu"
+          >
+            ✕
+          </button>
+        </header>
+        <ul id="list">
+          <li class="item">
+            <a href="#">TOP</a>
+          </li>
+          <li class="item">
+            <a href="#">ABOUT</a>
+          </li>
+          <li class="item">
+            <a href="#">NEWS</a>
+          </li>
+          <li class="item">
+            <a href="#">CONTACT</a>
+          </li>
+        </ul>
+      </div>
+    </transition>
+  </header>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script src="menu.js"></script>
+</body>
+</html>

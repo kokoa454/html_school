@@ -1,0 +1,93 @@
+@import url("https://fonts.googleapis.com/css?family=Noto+Sans+JP:400|Roboto:400,700&display=swap");
+
+body {
+  font-family: 'Roboto', 'Noto Sans JP', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #000;
+  background: white;
+}
+
+#header {
+  display: flex;
+  flex-direction : row-reverse;
+  width: 100%;
+  height: 40px;
+  background: #e6e6e6;
+}
+
+.breadcrumb-btn {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 5px 20px;
+  width: 30px;
+  height: 30px;
+  padding: 0;
+  border-radius: 20%;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  background: none;
+}
+
+.breadcrumb-decoration {
+  display: block;
+  content: '';
+  margin: 0 auto;
+  width: 18px;
+  height: 2px;
+  background: black;
+}
+
+.breadcrumb-decoration:nth-child(2) {
+  margin: 4px auto;
+}
+
+.breadcrumb-menu {
+  position: absolute;
+  top: 0;
+  transform: translateX(0);
+  width: 300px;
+  height: 100vh;
+  background: #D5D5D5;
+}
+
+.breadcrumb-menu header {
+  display: flex;
+  flex-direction : row-reverse;
+  height: 40px;
+  padding-bottom: 10px;
+}
+
+.breadcrumb-menu #list {
+  margin: 0;
+  padding: 0 40px;
+  list-style: none;
+}
+
+.breadcrumb-menu #list .item {
+  margin-bottom: 15px;
+}
+
+.breadcrumb-menu #list .item a {
+  text-decoration: none;
+  color: black;
+}
+
+@media screen and (min-width: 768px) {
+  body {
+    font-size: 16px;
+  }
+}
+
+.slide-enter-active, .slide-leave-active {
+  transition: transform .15s ease-in-out;
+}
+
+.slide-enter, .slide-leave-to {
+  transform: translateX(100%);
+}
