@@ -1,0 +1,11 @@
+@charset "utf-8";
+
+.bg-001{
+    background: url(./img/bg-stripe.png) left center repeat;
+    height: 150px;
+}
+
+.bg-002{
+    background: #99807b url(./img/bg-cat.png) center bottom no-repeat;
+    height: 500px;
+}
