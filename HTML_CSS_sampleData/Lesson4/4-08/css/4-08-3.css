@@ -1,8 +1,0 @@
-@charset "utf-8";
-
-/*pタグに対して中央寄せ*/
-p{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
