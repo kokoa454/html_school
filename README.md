@@ -1,1 +1,1 @@
-HTML, CSS and JavaScript in school
+HTML and CSS (also JavaScript in the future) in school
