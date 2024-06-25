@@ -36,12 +36,18 @@ dt{
 
 dd{
     width: 300px;
+    margin-left: 0;
 }
 
 input[type="text"], input[type="email"], select, textarea{
     display: block;
     width: 100%;
     font-size: 16px;
+}
+
+textarea{
+    resize: none;
+    height: 100px;
 }
 
 .form-submit{
@@ -67,5 +73,65 @@ input[type="text"], input[type="email"], select, textarea{
 
     dd{
         width: 100%;
+    }
+}
+
+dt, dd, select, input, textarea{
+    color: #666;
+}
+
+dt::before{
+    content: "◆";
+    color: #1b9aaa;
+    padding-right: 6px;
+}
+
+input[type="text"], input[type="email"], select, textarea{
+    border: 1px solid #ccc;
+    background-color: #fff;
+    padding: 0.3em;
+}
+
+select{
+    height: 2em;
+}
+
+.label-radio{
+    margin-right: 1.5em;
+}
+
+input[type="radio"]{
+    width: 16px;
+    height: 16px;
+    margin-right: 4px;
+}
+
+textarea{
+    min-height: 100px;
+}
+
+input[type="submit"]{
+    background-color: #1b9aaa;
+    width: 200px;
+    padding: 0.5em;
+    color: #fff;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+}
+
+@media screen and (min-width:769px){
+    input[type="hover"]:hover{
+            background-color: #147581;
+    }
+}
+
+@media screen and (min-width:768px) {
+    dt{
+        margin-bottom: 10px;
+    }
+
+    input[type="submit"]{
+        padding: 1em;
     }
 }
