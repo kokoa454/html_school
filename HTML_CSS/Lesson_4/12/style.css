@@ -68,6 +68,7 @@ ul.gnav-list a::first-line{
 }
 
 #gnav-input:checked ~ #gnav-btn{
+    transition: 0.3s;
     background: #1b9aaa url(./img/gnav-btn-close.png) center center no-repeat;
 }
 
