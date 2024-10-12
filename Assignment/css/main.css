@@ -38,8 +38,8 @@ section{
 }
 
 section h2{
-    padding: 20px;
-    font-size: 50px;
+    padding: 20px 0 10px 20px;
+    font-size: 45px;
     font-family: 'Mulish', sans-serif;
     font-weight: 800;
     color: #FFFAFA;
@@ -152,16 +152,16 @@ section h2{
 
 #work-pic{
     width: 100%;
-    height:80%;
+    height: 75%;
     background-image: url(../img/work.png);
-    background-size: 90%;
-    background-position: top;
+    background-position: center;
+    background-size: 85%;
     background-repeat: no-repeat;
 }
 
 #work-desc{
     width: 100%;
-    height: 20%;
+    height: 25%;
     position: absolute;
     bottom: 0;
 }
@@ -183,12 +183,13 @@ section h2{
 }
 
 #work-desc h6{
-    margin-top: 15px;
-    margin-right: 65px;
     font-family: 'Mulish', sans-serif;
     font-size: 11px;
     color: #333132;
     text-align: right;
+    position: absolute;
+    bottom: 17px;
+    right: 65px;
 }
 
 #to-work{
@@ -203,14 +204,47 @@ section h2{
 }
 
 #contact-section{
-    flex-grow: 2;
+    flex-grow: 1.5;
     flex-basis: 0;
     background-color: #c0c6c9;
     border: 2px solid #acb2b4;
 }
 
+ul{
+    width: 100%;
+    height: calc(100% - 81.75px);
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+#contact-top, #contact-bottom{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact {
+    margin-bottom: 20px;
+    list-style: none;
+    font-size: 30px;
+    font-family: 'Josefin Sans', sans-serif;
+    text-align: center;
+    text-decoration: none;
+    color: inherit;
+    transition: transform 0.3s ease-out;
+    display: inline-block;
+}
+
+.contact:hover {
+    transform: translateY(9px);
+}
+
 #music-section{
-    flex-grow: 1;
+    flex-grow: 1.5;
     flex-basis: 0;
     background-color: #c0c6c9;
     border: 2px solid #acb2b4;
