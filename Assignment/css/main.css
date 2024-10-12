@@ -47,7 +47,7 @@ section h2{
     padding: 20px;
     font-size: 50px;
     font-family: 'Mulish', sans-serif;
-    font-weight: 900;
+    font-weight: 800;
     color: #FFFAFA;
 }
 
@@ -71,18 +71,28 @@ section h2{
 
 #about-section{
     flex-grow: 4;
+    position: relative;
+    background-color: #c0c6c9;
+}
+
+#about-section a{
+    text-decoration: none;
+    color:inherit;
+}
+
+#about-pic{
+    height: 65%;
     background-image: url(../img/about.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    position: relative;
 }
 
-#about-bottom{
+#about-desc{
     margin: 0 0 auto 0;
     padding: 20px;
     width: 100%;
-    height: 30%;
+    height: 35%;
     background-color: #c0c6c9;
     position: absolute;
     bottom: 0;
@@ -90,21 +100,32 @@ section h2{
     border-top-right-radius: 5px;
 }
 
-#about-bottom h3{
+#about-desc h3{
     margin-bottom: 5px;
     font-size: 35px;
-    font-family: 'Mulish', sans-serif;
+    font-family: "Zen Maru Gothic", serif;
+    font-weight: 500;
 }
 
-#about-bottom h6{
+#about-desc h6{
     margin-bottom: 20px;
     font-size: 15px;
     font-family: 'Mulish', sans-serif;
 }
 
-#about-bottom p{
+#about-desc p{
     font-size: 25px;
     font-family: 'Mulish', sans-serif;
+}
+
+#to-about{
+    margin-top: 10px;
+    text-align: right;
+}
+
+#to-about i{
+    font-size: 25px;
+    color: #009933;
 }
 
 #work-section{
