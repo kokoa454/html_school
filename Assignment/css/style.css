@@ -5,8 +5,6 @@
 
 html{
     scroll-behavior: smooth;
-    width: 100vw;
-    height: 100vh;
 }
 
 body{
@@ -20,18 +18,13 @@ header{
     display: flex;
     align-items: center;
     justify-content: center;
+    border-bottom: 3px solid #BBBBBB;
 }
 
 header h2{
     color: #009933;
     font-family: 'Mulish', sans-serif;
     font-weight: bold;
-}
-
-.line{
-    width: 100%;
-    height: 3px;
-    background-color: #BBBBBB;
 }
 
 footer{
@@ -41,6 +34,9 @@ footer{
     display: flex;
     align-items: center;
     justify-content: center;
+    position: absolute;
+    bottom: 0;
+    border-top: 3px solid #BBBBBB;
 }
 
 footer p{
