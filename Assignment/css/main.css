@@ -256,3 +256,122 @@ ul{
     height: 152px;
     border-radius:12px
 }
+
+@media (max-width: 500px) {
+    #welcome-section, #about-section, #work-section, #contact-section, #music-section{
+        max-width: 400px ;
+    }
+
+    #welcome-section p{
+        font-size: 20px;
+    }
+
+    #contact-section ul{
+        height: auto;
+        gap: 0;
+    }
+
+    #contact-top, #contact-bottom{
+        flex-direction: row;
+    }
+
+    .contact{
+        margin: 15px;
+        font-size: 42px;
+    }
+
+    .text-clear{
+        display: none;
+    }
+}
+
+@media (max-width: 640px) {
+    #welcome-section, #about-section, #work-section, #contact-section, #music-section{
+        max-width: calc(100% - 80px);
+    }
+}
+
+@media (max-width: 900px) {
+    main{
+        height: auto;
+        flex-direction: column;
+        overflow: auto;
+    }
+
+    #left-section, #right-section{
+        margin: 0;
+        width: 100%;
+        align-items: center;
+    }
+
+    #welcome-section{
+        min-height: 150px;
+    }
+
+    #about-section{
+        min-height: 600px;
+        margin-bottom: 20px;
+    }
+
+    #work-section{
+        min-height: 400px;
+    }
+
+    #work-pic{
+        background-size: 80%;
+    }
+
+    #contact-section{
+        min-height: 200px;
+    }
+
+    #music-section{
+        min-height: 152px;
+    }
+}
+
+@media (min-width: 2000px) and (min-height: 1200px) {
+    section{
+        max-width: 800px;
+    }
+
+    #welcome-section p{
+        font-size: 40px;
+    }
+
+    #about-desc h3{
+        font-size: 40px;
+    }
+
+    #about-desc h6{
+        font-size: 20px;
+    }
+
+    #about-desc p{
+        font-size: 22px;
+    }
+
+    section h2{
+        font-size: 50px;
+    }
+
+    #work-pic{
+        background-size: 90%;
+    } 
+
+    #work-desc h4{
+        font-size: 40px;
+    }
+
+    #work-desc p{
+        font-size: 20px;
+    }
+
+    #work-desc h6{
+        font-size: 13px;
+    }
+
+    .contact{
+        font-size: 35px;
+    } 
+}
