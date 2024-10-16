@@ -24,6 +24,10 @@ header{
     background-color: #FFFAFA;
 }
 
+a{
+    text-decoration: none;
+}
+
 header h2{
     color: #009933;
     font-family: 'Mulish', sans-serif;
