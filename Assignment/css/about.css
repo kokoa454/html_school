@@ -45,7 +45,8 @@ h1{
     border: 2px solid #acb2b4;
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;    
+    background-position: center; 
+    box-shadow: 0px 5px 15px 0px rgba(29, 55, 82, 0.35);   
 }
 
 #overview{
@@ -62,6 +63,7 @@ h1{
     border: 2px solid #acb2b4;
     flex-grow: 2;
     border-radius: 20px;
+    box-shadow: 0px 5px 15px 0px rgba(29, 55, 82, 0.35);
 }
 
 #overview-top-bottom{
@@ -80,6 +82,7 @@ h1{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    box-shadow: 0px 5px 15px 0px rgba(29, 55, 82, 0.35);
 }
 
 #overview h3{
@@ -100,4 +103,56 @@ h1{
     margin-right: 2px;
     font-family: "Agdasima", sans-serif;
     font-weight: bold;
+}
+
+#content-bottom h4{
+    font-size: 30px;
+}
+
+#decorated-text{
+    position: relative;
+}
+
+#decorated-text::before{
+    position: absolute;
+    left: -5px;
+    bottom: 5px;
+    width: 100%;
+    height: 8px;
+    transform: skew(-45deg);
+    background-image: repeating-linear-gradient(90deg, transparent 0 5px, #2ebadd 5px 10px);
+    content: '';
+    z-index: -1;
+}
+
+#summary p{
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+#summary h5{
+    margin-top: 15px;
+    font-size: 23px;
+}
+
+#experience, #education{
+    margin-top: 23px;
+    margin-bottom: 23px;
+    padding-top: 23px;
+    border-top: 2px solid #acb2b4;
+}
+
+#experience h4, #education h4{
+    margin-bottom: 15px;
+}
+
+#experience h5, #education h5{
+    margin-bottom: 6px;
+    font-size: 23px;
+}
+
+#experience p, #education p{
+    margin-bottom: 10px;
+    color: #acb2b4;
+    font-size: 18px;
 }
