@@ -35,21 +35,6 @@ header h2{
     font-weight: 600;
 }
 
-#lang-nav{
-    position: absolute;
-    bottom: 10px;
-    right: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-}
-
-#lang-nav p{
-    font-size: 20px;
-    font-family: 'Mulish', sans-serif;
-}
-
 footer{
     width: 100%;
     bottom: 0;
