@@ -22,6 +22,7 @@ header{
     justify-content: center;
     border-bottom: 5px solid #009933;
     background-color: #FFFAFA;
+    position: relative;
 }
 
 a{
@@ -32,6 +33,21 @@ header h2{
     color: #009933;
     font-family: 'Mulish', sans-serif;
     font-weight: 600;
+}
+
+#lang-nav{
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+#lang-nav p{
+    font-size: 20px;
+    font-family: 'Mulish', sans-serif;
 }
 
 footer{
