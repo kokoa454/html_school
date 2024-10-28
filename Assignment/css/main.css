@@ -1,3 +1,11 @@
+:root{
+    --green: #2e6a87;
+    --blue: #eaf4fc;
+    --white: #fffaff;
+    --black: #180614;
+    --font-white: #f8fbf8;
+}
+
 main{
     margin: 40px 0 40px 0;
     width: 100%;
@@ -43,9 +51,8 @@ section h2{
     padding: 10px 0 10px 10px;
     font-size: 30px;
     font-family: 'Mulish', sans-serif;
-    font-weight: 800;
-    color: #FFFAFA;
-    text-shadow: 1px 1px 2px #acb2b4;
+    font-weight: 700;
+    color: var(--black);
 }
 
 #welcome-section{
@@ -55,8 +62,12 @@ section h2{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    border: 2px solid #333132;
+    border: 2px solid var(--green);
     position: relative;
+}
+
+#welcome-section p{
+    color: var(--black);
 }
 
 .hover-act{
@@ -88,8 +99,8 @@ section h2{
     flex-grow: 2;
     flex-basis: 0;
     position: relative;
-    background-color: #c0c6c9;
-    border: 2px solid #acb2b4;
+    background-color: var(--blue);
+    border: 2px solid var(--green);
 }
 
 #about-section a{
@@ -113,12 +124,13 @@ section h2{
     bottom: 0;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
-    border-top: 2px solid #acb2b4;
+    border-top: 2px solid var(--green);
 }
 
 #about-desc h3{
     margin-bottom: 5px;
     font-size: 30px;
+    color: var(--black);
     font-family: "Zen Maru Gothic", serif;
     font-weight: 500;
 }
@@ -126,12 +138,14 @@ section h2{
 #about-desc h6{
     margin-bottom: 20px;
     font-size: 12px;
+    color: var(--black);
     font-family: 'Mulish', sans-serif;
 }
 
 #about-desc p{
     margin-bottom: 5px;
     font-size: 15px;
+    color: var(--black);
     font-family: 'Mulish', sans-serif;
 }
 
@@ -145,14 +159,14 @@ section h2{
 
 #to-about i{
     font-size: 25px;
-    color: #009933;
+    color: var(--green);
 }
 
 #work-section{
     flex-grow: 3;
     flex-basis: 0;
-    background-color: #c0c6c9;
-    border: 2px solid #acb2b4;
+    background-color: var(--blue);
+    border: 2px solid var(--green);
     position: relative;
 }
 
@@ -181,6 +195,7 @@ section h2{
     font-family: 'Mulish', sans-serif;
     font-size: 25px;
     font-weight: 800;
+    color: var(--black);
     text-align: center;
 }
 
@@ -189,14 +204,14 @@ section h2{
     font-family: 'Mulish', sans-serif;
     font-size: 13px;
     font-weight: 700;
-    color: #333132;
+    color: var(--black);
     text-align: center;
 }
 
 #work-desc h6{
     font-family: 'Mulish', sans-serif;
     font-size: 12px;
-    color: #333132;
+    color: var(--black);
     text-align: right;
     position: absolute;
     bottom: 17px;
@@ -211,14 +226,14 @@ section h2{
 
 #to-work i{
     font-size: 25px;
-    color: #009933;
+    color: var(--green);
 }
 
 #contact-section{
     flex-grow: 1.5;
     flex-basis: 0;
-    background-color: #c0c6c9;
-    border: 2px solid #acb2b4;
+    background-color: var(--blue);
+    border: 2px solid var(--green);
 }
 
 ul{
@@ -254,12 +269,20 @@ ul{
     transform: translateY(9px);
 }
 
+.contact i{
+    color: var(--black);
+}
+
+.contact span{
+    color: var(--black);
+}
+
 #music-section{
     flex-grow: 1.5;
     max-height: 152px;
     flex-basis: 0;
-    background-color: #c0c6c9;
-    border: 2px solid #acb2b4;
+    background-color: var(--blue);
+    border: 2px solid var(--green);
 }
 
 #spotify-playlist{

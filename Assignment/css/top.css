@@ -1,3 +1,11 @@
+:root{
+    --green: #2e6a87;
+    --blue: #eaf4fc;
+    --white: #fffaff;
+    --black: #180614;
+    --font-white: #f8fbf8;
+}
+
 main{
     height: calc(100vh - 130px);
 }
@@ -25,11 +33,13 @@ h2, h3, #en{
 #greeting h2{
     margin-bottom: 20px;
     font-size: 35px;
+    color: var(--black);
 }
 
 #greeting h3{
     margin-top: 20px;
     font-size: 28px;
+    color: var(--black);
 }
 
 #lang-buttons{
@@ -43,9 +53,9 @@ h2, h3, #en{
 .lang-button{
     min-width: 300px;
     min-height: 100px;
-    color: #fff;
+    color: var(--font-white);
 	font-weight: bold;
-	background: #2ebadd;
+	background: var(--green);
 	position: relative;
 	transition: 0.3s ease-in-out;
     display: flex;
@@ -60,13 +70,13 @@ h2, h3, #en{
 }
 
 .lang-button:hover {
-    background: #fff;
-    color: #2ebadd;
+    background: var(--font-white);
+    color: var(--green);
 }
 
 #en:hover{
     background-image: url(../img/button_en.png);
-    color: #2ebadd;
+    color: var(--green);
     -webkit-text-stroke: 2px #000;
     background-position: center;
     background-repeat: no-repeat;
@@ -77,7 +87,7 @@ h2, h3, #en{
 
 #ru:hover{
     background-image: url(../img/button_ru.png);
-    color: #2ebadd;
+    color: var(--green);
     -webkit-text-stroke: 2px #000;
     background-position: center;
     background-repeat: no-repeat;
@@ -88,7 +98,7 @@ h2, h3, #en{
 
 #ja:hover{
     background-image: url(../img/button_ja.png);
-    color: #2ebadd;
+    color: var(--green);
     -webkit-text-stroke: 2px #000;
     background-position: center;
     background-repeat: no-repeat;
@@ -118,12 +128,12 @@ h2, h3, #en{
     height: 100%;
 }
 .lang-button:hover:before {
-    border-top-color: #2ebadd;
-    border-right-color: #2ebadd;
+    border-top-color: var(--green);
+    border-right-color: var(--green);
     transition: width 0.15s ease-out, height 0.15s ease-out 0.15s;
 }
 .lang-button:hover:after {
-    border-bottom-color: #2ebadd;
-    border-left-color: #2ebadd;
+    border-bottom-color: var(--green);
+    border-left-color: var(--green);
     transition: border-color 0s ease-out 0.2s, width 0.15s ease-out 0.2s, height 0.15s ease-out 0.3s;
 }

@@ -1,3 +1,9 @@
+:root{
+    --green: #2e6a87;
+    --white: #fffaff;
+    --black: #180614;
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -11,7 +17,7 @@ html{
 body{
     width: 100%;
     height: 100%;
-    background-color: #FFFAFA;
+    background-color: var(--white);
 }
 
 header{
@@ -20,8 +26,8 @@ header{
     display: flex;
     align-items: center;
     justify-content: center;
-    border-bottom: 5px solid #009933;
-    background-color: #FFFAFA;
+    border-bottom: 5px solid var(--green);
+    background-color: var(--white);
     position: relative;
 }
 
@@ -30,7 +36,7 @@ a{
 }
 
 header h2{
-    color: #009933;
+    color: var(--green);
     font-family: 'Mulish', sans-serif;
     font-weight: 600;
 }
@@ -44,13 +50,14 @@ footer{
     justify-content: center;
     position: absolute;
     bottom: 0;
-    border-top: 5px solid #009933;
+    border-top: 5px solid var(--green);
     background-color: #FFFAFA;
 }
 
 footer p{
     font-size: 16px;
     font-family: 'Mulish', sans-serif;
+    color: var(--black);
 }
 
 @media (max-width: 500px) {

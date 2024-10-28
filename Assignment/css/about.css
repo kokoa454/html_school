@@ -13,6 +13,15 @@ footer{
 
 
 /*css for about.html */
+:root{
+    --green: #2e6a87;
+    --blue: #eaf4fc;
+    --white: #fffaff;
+    --black: #180614;
+    --font-white: #f8fbf8;
+    --gray: #acb2b4;
+}
+
 main{
     margin: 20px 40px;
     max-width: 1500px;
@@ -20,14 +29,17 @@ main{
 
 h1, h4, h5, h6, p{
     font-family: 'Mulish', sans-serif;
+    color: var(--black);
 }
 
 h3{
     font-family: "Zen Maru Gothic", serif;
+    color: var(--black);
 }
 
 h1{
     font-size: 40px;
+    color: var(--black);
 }
 
 #content-top{
@@ -42,7 +54,7 @@ h1{
     min-height: 400px;
     border-radius: 20px;
     background-image: url(../img/aboutme.png);
-    border: 2px solid #acb2b4;
+    border: 2px solid --green;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center; 
@@ -59,8 +71,8 @@ h1{
 #overview-top{
     padding: 10px;
     width: 100%;
-    background-color: #c0c6c9;
-    border: 2px solid #acb2b4;
+    background-color: var(--blue);
+    border: 2px solid var(--green);
     flex-grow: 2;
     border-radius: 20px;
     box-shadow: 0px 5px 15px 0px rgba(29, 55, 82, 0.35);
@@ -75,8 +87,8 @@ h1{
 #overview-bottom{
     padding: 10px;
     width: 100%;
-    background-color: #c0c6c9;
-    border: 2px solid #acb2b4;
+    background-color: var(--blue);
+    border: 2px solid var(--green);
     flex-grow: 1;
     border-radius: 20px;
     display: flex;
@@ -120,7 +132,7 @@ h1{
     width: 100%;
     height: 8px;
     transform: skew(-45deg);
-    background-image: repeating-linear-gradient(90deg, transparent 0 5px, #2ebadd 5px 10px);
+    background-image: repeating-linear-gradient(90deg, transparent 0 5px, #89c3eb 5px 10px);
     content: '';
     z-index: -1;
 }
@@ -139,7 +151,7 @@ h1{
     margin-top: 23px;
     margin-bottom: 23px;
     padding-top: 23px;
-    border-top: 2px solid #acb2b4;
+    border-top: 2px solid var(--green);
 }
 
 #experience h4, #education h4{
@@ -153,7 +165,7 @@ h1{
 
 #experience p, #education p{
     margin-bottom: 10px;
-    color: #acb2b4;
+    color: var(--gray);
     font-size: 18px;
 }
 
