@@ -28,12 +28,6 @@ main{
 }
 
 h1, h4, h5, h6, p{
-    font-family: 'Mulish', sans-serif;
-    color: var(--black);
-}
-
-h3{
-    font-family: "Zen Maru Gothic", serif;
     color: var(--black);
 }
 
@@ -42,17 +36,21 @@ h1{
     color: var(--black);
 }
 
-.ja h1, .ja h3, .ja h4, .ja h5, .ja h6, .ja p{
+h3{
+    color: var(--black);
+}
+
+.en-text{
+    font-family: 'Mulish', sans-serif;
+}
+
+.ja-text{
     font-family: "Zen Maru Gothic", serif;
 }
 
-.ru h1, .ru h3, .ru h4, .ru h5, .ru h6, .ru p{
+.ru-text{
     font-family: "Merriweather", serif;
-    line-height: 130%;
-}
-
-.ru #overview #overview-top h3{
-    font-family: "Zen Maru Gothic", serif;
+    line-height: 140%;
 }
 
 #content-top{
