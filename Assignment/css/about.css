@@ -46,6 +46,15 @@ h1{
     font-family: "Zen Maru Gothic", serif;
 }
 
+.ru h1, .ru h3, .ru h4, .ru h5, .ru h6, .ru p{
+    font-family: "Merriweather", serif;
+    line-height: 130%;
+}
+
+.ru #overview #overview-top h3{
+    font-family: "Zen Maru Gothic", serif;
+}
+
 #content-top{
     margin-top: 20px;
     margin-bottom: 20px;
@@ -124,6 +133,10 @@ h1{
 .ja .bold{
     font-family: "DotGothic16", sans-serif;
     font-size: 15px;
+}
+
+.ru .bold{
+    font-family: "Oswald", sans-serif;
 }
 
 #content-bottom h4{
