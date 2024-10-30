@@ -42,6 +42,10 @@ h1{
     color: var(--black);
 }
 
+.ja h1, .ja h3, .ja h4, .ja h5, .ja h6, .ja p{
+    font-family: "Zen Maru Gothic", serif;
+}
+
 #content-top{
     margin-top: 20px;
     margin-bottom: 20px;
@@ -115,6 +119,11 @@ h1{
     margin-right: 2px;
     font-family: "Agdasima", sans-serif;
     font-weight: bold;
+}
+
+.ja .bold{
+    font-family: "DotGothic16", sans-serif;
+    font-size: 15px;
 }
 
 #content-bottom h4{
