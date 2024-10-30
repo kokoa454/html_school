@@ -23,6 +23,7 @@ h2, h3, #en{
 }
 
 #greeting{
+    padding: 50px 40px;
     height: 60%;
     display: flex;
     flex-direction: column;
@@ -34,12 +35,14 @@ h2, h3, #en{
     margin-bottom: 20px;
     font-size: 35px;
     color: var(--black);
+    text-align: center;
 }
 
 #greeting h3{
     margin-top: 20px;
     font-size: 28px;
     color: var(--black);
+    text-align: center;
 }
 
 #lang-buttons{
@@ -47,11 +50,11 @@ h2, h3, #en{
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    gap: 50px;
+    gap: 30px;
 }
 
 .lang-button{
-    min-width: 300px;
+    min-width: 250px;
     min-height: 100px;
     color: var(--font-white);
 	font-weight: bold;
@@ -136,4 +139,41 @@ h2, h3, #en{
     border-bottom-color: var(--green);
     border-left-color: var(--green);
     transition: border-color 0s ease-out 0.2s, width 0.15s ease-out 0.2s, height 0.15s ease-out 0.3s;
+}
+
+@media (max-width: 900px){
+    main{
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #greeting{
+        margin-top: 80px;
+        height: auto;
+    }
+
+    #lang-buttons{
+        margin-bottom: 100px;
+        height: auto;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /*update for header and footer*/
+    body{
+        position: relative;
+    }
+
+    header{
+        position: absolute;
+        top: 0;
+    }
+
+    footer{
+        position: absolute;
+        bottom: 0;
+    }
 }
