@@ -65,7 +65,7 @@ h3{
     min-height: 400px;
     border-radius: 20px;
     background-image: url(../img/aboutme.png);
-    border: 2px solid --green;
+    border: 2px solid var(--green);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center; 
