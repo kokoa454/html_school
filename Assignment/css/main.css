@@ -288,61 +288,6 @@ ul{
     border-radius:12px
 }
 
-@media (max-height: 650px) {
-    #welcome-section p{
-        font-size: 25px;
-    }
-
-    #about-desc h3{
-        font-size: 20px;
-    }
-
-    #about-desc h6{
-        font-size: 12px;
-    }
-
-    #about-desc p{
-        font-size: 10px;
-    }
-
-    section h2{
-        font-size: 23px;
-    }
-
-    #work-pic{
-        background-size: 50%;
-    } 
-
-    #work-desc h4{
-        font-size: 18px;
-    }
-
-    #work-desc p{
-        font-size: 10px;
-    }
-
-    #work-desc h6{
-        font-size: 13px;
-    }
-
-    #contact-top, #contact-bottom{
-        flex-direction: row;
-    }
-
-    .contact{
-        margin: 10px;
-        font-size: 25px;
-    }
-
-    .text-clear1{
-        display: none;
-    }
-
-    .text-clear2{
-        display: none;
-    }
-}
-
 @media (max-width: 500px) {
     #welcome-section, #about-section, #work-section, #contact-section, #music-section{
         max-width: 400px ;
